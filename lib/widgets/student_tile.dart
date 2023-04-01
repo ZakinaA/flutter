@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webstudent/models/student.dart';
 
+
 class StudentTile extends StatelessWidget {
   final Student student;
   final VoidCallback onTap;
@@ -15,7 +16,7 @@ class StudentTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text('${student.prenom} ${student.nom}'),
-      subtitle: Text(student.nom),
+      //subtitle: Text('${student.prenom}'),
       onTap: onTap,
     );
   }
