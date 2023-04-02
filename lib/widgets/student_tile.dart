@@ -16,7 +16,7 @@ class StudentTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text('${student.prenom} ${student.nom}'),
-      //subtitle: Text('${student.prenom}'),
+      subtitle: Text('${student.dateNaiss}'),
       onTap: onTap,
     );
   }

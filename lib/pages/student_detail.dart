@@ -23,12 +23,12 @@ class StudentDetail extends StatelessWidget {
             ),
             const SizedBox(height: 8.0),
             Text(
-              'Date de naissance : ${student.nom}',
+              'Date de naissance : ${student.dateNaiss}',
               style: Theme.of(context).textTheme.subtitle1,
             ),
             const SizedBox(height: 16.0),
             Text(
-              'Lycée : ${student.nom}',
+              'Maison : ${student.maison.nom}',
               style: Theme.of(context).textTheme.subtitle1,
             ),
           ],
