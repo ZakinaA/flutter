@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:webstudent/models/student.dart';
 import 'package:webstudent/services/api.dart';
 import 'package:webstudent/widgets/student_tile.dart';
+import 'package:webstudent/widgets/menu.dart';
 import 'package:webstudent/pages/student_detail.dart';
 
 class StudentList extends StatefulWidget {
@@ -59,6 +60,7 @@ class _StudentListState extends State<StudentList> {
           },
         ),
       ),
+      drawer: Menu(),
     );
   }
 }
